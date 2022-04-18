@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+i{
+  font-family: “FontAwesome”; font-weight: normal;
+}
+
+.Navbar{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: rgb(104, 104, 104);
+  color: #fff;
+  font-size: 1.5rem;
+}
+.Navbrand{
+  width: 150px;
+  height: 150px;
+}
+.Navitems{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.Navitem a{
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.Navitem a:hover{
+  color: #ccc;
+}
+.edit, .delete, .post{
+  width: 80%;
+  margin: 0 auto;
+}
+.table{
+  width: 80%;
+  margin: 0 auto;
+}
+.table-item a{
+  color: #000;
+}
+.col{
+  width: 0;
+}
+/* .cards{
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px auto;
+}
+.card{
+  background-color:teal;
+  margin: 0 10px 10px 0;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+} */
+
+.button{
+  margin-right: 10px;
+}
+
+.edit form{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.edit input[type=text], .edit textarea{
+  width: 60%;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.edit button{
+  width: 40%;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px 10% 0;
+}
