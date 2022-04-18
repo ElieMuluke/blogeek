@@ -36,7 +36,7 @@ function Delete() {
         <div className="delete">
             <h2>Delete</h2>
 
-            <p>The Post with title:({post.title}) will be deleted in 5s then redirected to home</p>
+            <p>The Post with title:<span className="in-delete-title">({post.title})</span> will be deleted in 5s then redirected to home</p>
         </div>
     );
 }
