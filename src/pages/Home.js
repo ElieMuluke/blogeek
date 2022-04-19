@@ -39,10 +39,10 @@ function Home(){
                             </td>
                             <td className="table-item">{post.body}</td>
                             <td className="table-item">
-                                <a href={`/edit/${post.id}`}><i className="fa-solid fa-pen"></i></a>
+                                <a className="btn btn-light" href={`/edit/${post.id}`}><i className="fa-solid fa-pen"></i></a>
                             </td>
                             <td className="table-item">
-                                <a href={`/delete/${post.id}`}><i className="fa-solid fa-trash"></i></a>
+                                <a className="btn btn-light" href={`/delete/${post.id}`}><i className="fa-solid fa-trash"></i></a>
                             </td>
                         </tr>
                         )

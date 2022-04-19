@@ -27,16 +27,18 @@ function Delete() {
         }).catch((error) => {
             console.log(error.status)
         })
-        // console.log("executed");
     }
     
     setTimeout(deleteItem, 5000)
 
     return(
         <div className="delete">
-            <h2>Delete</h2>
 
-            <p>The Post with title:<span className="in-delete-title">({post.title})</span> will be deleted in 5s then redirected to home</p>
+            <div className="alert alert-success" role="alert">
+                <h2 className="alert-heading">Successful deletion!</h2>
+                <p><span className="in-delete-title">({post.title})</span> will be deleted in 5s.</p>
+                <p>Aww yeah, you successfully deleted the post. Hold on a little, you will be redirected to home page in a few.</p>
+            </div>
         </div>
     );
 }

@@ -28,9 +28,15 @@ function Edit() {
         <div className="edit">
             <h2>Edit Post</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="title" placeholder="Title" />
-                <textarea rows={14} type="text" name="subject" placeholder="Subject" />
-                <button type="submit" >Edit Post</button>
+                <div className="form-group">
+                  <label for="title">Title: </label>
+                  <input className="form-control form-control-lg" id="title" aria-describedby="titleHelp" type="text" name="title" placeholder="Title" required />
+                </div>
+                <div className="form-group">
+                  <label for="subject">Subject: </label>
+                  <textarea className="form-control form-control-lg" id="subject" aria-describedby="subjectHelp" rows={14} type="text" name="subject" placeholder="Subject" required/>
+                </div>
+                <button type="submit" className="btn btn-dark">Edit Post</button>
             </form>
         </div>
     );

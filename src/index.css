@@ -14,20 +14,34 @@ code {
 i{
   font-family: “FontAwesome”; font-weight: normal;
 }
-
+.jumbotron{
+  background-color: #1a355b;
+  color: #fff;
+  padding-left: 10%;
+}
+.jumbotron .display-4{
+  font-weight: bold;
+}
+.jumbotron .btn{
+  background-color: brown;
+}
+i{
+  color: brown;
+}
 .Navbar{
   display: flex;
   width: 80%;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 20px ;
   justify-content: space-between;
   background-color: rgb(104, 104, 104);
   color: #fff;
   font-size: 1.5rem;
 }
 .Navbrand{
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 .Navitems{
   display: flex;
@@ -56,27 +70,36 @@ i{
 .col{
   width: 0;
 }
-/* .cards{
-  width: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  margin: 10px auto;
-}
-.card{
-  background-color:teal;
-  margin: 0 10px 10px 0;
-  width: 400px;
+
+.post .card{
   height: 300px;
   padding: 20px;
-} */
-
+}
+.post .card:hover{
+  background-color: #ccc;
+  transition: 0.3s;
+}
+.post .card-text{
+  margin-bottom: 50px;
+}
+.post .post-btn{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.post .post-btn .btn{
+  padding: 10px 50px;
+}
 .button{
   margin-right: 10px;
 }
-
 .edit form{
   display: flex;
   flex-flow: column nowrap;
+  margin-bottom: 10%;
 }
 .edit input[type=text], .edit textarea{
   width: 60%;
@@ -94,4 +117,5 @@ i{
 .delete .in-delete-title{
   font-weight: bold;
   font-style: italic;
+  text-transform: capitalize;
 }

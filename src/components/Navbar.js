@@ -1,16 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import brandlogo from "./assets/blogeek-logo.jpg"
 
 function Navbar(){
     return(
-        <div className="Navbar container-fluid">
-            <img className="Navbrand" src={brandlogo} alt="brand-logo"></img>
-            <ul className="Navitems">
-                <li className="Navitem">
-                    <a href="/">Posts</a>
-                </li>
-            </ul>
+        <div className="jumbotron jumbotron-fluid">
+            <h1 className="display-4">Blogeek</h1>
+            <p className="lead">Convallis tellus id interdum velit. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam..</p>
+            <p>Gravida quis blandit turpis cursus in hac habitasse. Convallis a cras semper auctor. Quis viverra nibh cras pulvinar. Orci sagittis eu volutpat odio facilisis mauris sit amet.</p>
+            <a className="btn btn-primary btn-lg" href="/" role="button">Posts</a>
         </div>
     )
 }

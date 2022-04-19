@@ -7,22 +7,32 @@ function Post() {
 
     const [post, setPost] = useState([]);
 
-    const getPosts = (API)=>{
+    const getPosts = (API,aFunction)=>{
         fetch(API)
         .then(res => res.json())
         .then(data=>{
-            setPost(data);
+            aFunction(data);
         });
     }
     useEffect(()=>{
-        getPosts(specificdata+params.id)
+        getPosts(specificdata+params.id, setPost)
     },[params.id]);
 
     return(
         <div className="post">
-            <h1>{post.title}</h1>
-            <p>{post.body}</p>
+            <div className="card">
+                <div className="card-body">
+                    <h3 className="card-title">{post.title}</h3>
+                    <p className="card-text">{post.body}.</p>
+
+                    <div className="btn post-btn">
+                        <a className="btn btn-light btn-lg" href={`/edit/${post.id}`}><i className="fa-solid fa-pen"></i></a>
+                        <a className="btn btn-light btn-lg" href={`/delete/${post.id}`}><i className="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+
     );
 }
 
