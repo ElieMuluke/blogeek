@@ -34,9 +34,9 @@ function Edit() {
                 </div>
                 <div className="form-group">
                   <label for="subject">Subject: </label>
-                  <textarea className="form-control form-control-lg" id="subject" aria-describedby="subjectHelp" rows={14} type="text" name="subject" placeholder="Subject" required/>
+                  <textarea className="form-control form-control-lg" id="subject" aria-describedby="subjectHelp" rows={5} type="text" name="subject" placeholder="Subject" required/>
                 </div>
-                <button type="submit" className="btn btn-dark">Edit Post</button>
+                <button type="submit" className="btn">Edit Post</button>
             </form>
         </div>
     );
